@@ -1,0 +1,191 @@
+Create a premium futuristic personal portfolio website for a female Software Engineer, AI Startup Founder, WordPress Developer, Frontend Developer, and Tech Trainer named “Bisma Asif”. The website should feel world-class, modern, cinematic, interactive, highly animated, and visually unforgettable — something that looks better than normal portfolio templates and feels like a top Silicon Valley founder portfolio.
+
+The website must be fully responsive for desktop, tablet, and mobile.
+
+Use React + Tailwind CSS + Framer Motion + GSAP + Three.js (where needed) for smooth premium animations and interactions.
+
+Design Style:
+
+Dark futuristic UI with glowing gradients
+Use modern neon shades like purple, blue, cyan, pink, black, glassmorphism, gradients, blurred backgrounds, floating particles, animated blobs, moving lights, hover glows, animated cards, scrolling effects
+Add premium transitions between sections
+Smooth scroll animations
+Mouse-following glow effects
+Floating tech icons
+Animated background grids
+Typing animations
+Reveal animations on scroll
+Micro interactions on buttons/cards
+Loading screen animation with logo/name
+Cursor effects
+Smooth page transitions
+
+Fonts:
+
+Use premium modern fonts like Poppins, Sora, Space Grotesk, or Outfit
+
+Portfolio Structure:
+
+HERO SECTION
+Full-screen cinematic hero section
+Animated introduction:
+“Hi, I’m Bisma Asif”
+“Software Engineer | AI Founder | Frontend Developer | Tech Trainer”
+Add animated text rotation
+Add glowing CTA buttons:
+View Projects
+Download Resume
+Contact Me
+Add social icons with hover animations:
+LinkedIn, GitHub, Instagram, Email
+Add floating 3D tech elements
+Add animated background particles
+ABOUT ME SECTION
+Create a powerful storytelling section about Bisma:
+Passionate Software Engineer
+AI Startup Founder of “RishtaAI”
+Experience in React.js, HTML, CSS, JavaScript, WordPress
+Teaching and mentoring students
+Building AI-powered products and startups
+Freelancer experience
+Creative thinker + problem solver
+Goal to create impactful AI products in Pakistan
+
+Add:
+
+Animated counters
+Timeline animations
+Floating cards
+Skill percentage animations
+SKILLS SECTION
+Create highly animated skill cards with icons and progress effects.
+
+Skills:
+
+HTML5
+CSS3
+JavaScript
+React.js
+Tailwind CSS
+WordPress
+UI/UX
+AI Prompt Engineering
+Firebase
+Supabase
+GitHub
+Figma
+
+Add:
+
+Hover glow effects
+Animated progress bars
+Rotating 3D cards
+Tech stack logos
+PROJECTS SECTION
+Create a premium showcase area with animated project cards.
+
+Featured Projects:
+
+RishtaAI
+AI-powered compatibility and matchmaking platform
+Personality analysis
+Astrology-based matching
+AI predictions
+Smart forms and reports
+Portfolio Website
+Modern animated portfolio
+WordPress Freelance Projects
+Business websites
+Responsive UI designs
+React.js Projects
+Dynamic frontend applications
+
+For each project include:
+
+Live preview button
+GitHub button
+Animated hover effects
+Glassmorphism cards
+Project mockups
+Tags and technologies used
+EXPERIENCE SECTION
+Create animated timeline experience.
+
+Include:
+
+WordPress Freelancer
+Frontend Developer
+Tech Trainer
+AI Startup Builder
+
+Add animated career journey effects.
+
+EDUCATION SECTION
+Include:
+Software Engineering background
+Workshops
+Teaching sessions
+University presentations
+
+Use animated cards and timelines.
+
+ACHIEVEMENTS SECTION
+Create a premium achievements showcase:
+AI startup recognition
+Workshops conducted
+Student mentoring
+Startup development
+Freelancing experience
+
+Add counters, glow cards, and animated statistics.
+
+SERVICES SECTION
+Services offered:
+Portfolio Websites
+React.js Development
+WordPress Development
+AI Startup Consultation
+UI/UX Design
+Tech Training
+
+Add animated service cards with hover effects.
+
+TESTIMONIAL SECTION
+Create animated testimonial slider with glassmorphism cards.
+CONTACT SECTION
+Premium futuristic contact section:
+Animated contact form
+Social links
+Email button
+WhatsApp button
+Calendly booking button
+Map section
+Glowing submit button
+FOOTER
+Modern animated footer with:
+Logo
+Quick links
+Social icons
+Copyright
+Back to top button
+
+Extra Features:
+
+Fully animated throughout
+Smooth page transitions
+Scroll progress indicator
+Dark/light mode toggle
+SEO optimized
+Fast loading
+Fully responsive
+Modern accessibility
+Optimized animations
+Add sound-less cinematic feel
+Add premium interactive UI
+Use reusable clean code structure
+Use professional folder structure
+Add comments in code
+
+Important:
+The website should NOT look like a normal template.
+It should feel premium, modern, startup-level, futuristic, cinematic, and highly interactive like award-winning developer portfolios on Awwwards.
