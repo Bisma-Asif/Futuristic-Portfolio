@@ -56,8 +56,21 @@ export function Experience() {
           </h2>
         </motion.div>
 
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="relative rounded-2xl overflow-hidden mb-16 h-48 max-w-4xl mx-auto"
+        >
+          <img src="https://images.unsplash.com/photo-1484417894907-623942c8ee29?w=1200&q=80&fit=crop" className="w-full h-full object-cover" alt="Workspace" />
+          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent" />
+          <div className="absolute left-8 top-1/2 -translate-y-1/2">
+            <p className="text-3xl font-bold font-serif gradient-text">My Journey</p>
+            <p className="text-muted-foreground text-sm mt-1">From freelancer to AI founder</p>
+          </div>
+        </motion.div>
+
         <div className="relative max-w-4xl mx-auto">
-          {/* Center Line */}
           <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary via-secondary to-transparent md:-translate-x-1/2 opacity-30 shadow-[0_0_15px_rgba(147,51,234,0.5)]" />
 
           {experiences.map((exp, i) => {
@@ -65,7 +78,6 @@ export function Experience() {
             return (
               <div key={i} className="relative mb-12 md:mb-24 flex flex-col md:flex-row items-start md:items-center justify-between">
                 
-                {/* Desktop Left Side */}
                 <motion.div 
                   initial={{ opacity: 0, x: isEven ? -50 : 50 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -79,7 +91,6 @@ export function Experience() {
                   </div>
                 </motion.div>
 
-                {/* Center Icon */}
                 <motion.div 
                   initial={{ opacity: 0, scale: 0 }}
                   whileInView={{ opacity: 1, scale: 1 }}
@@ -90,7 +101,6 @@ export function Experience() {
                   <exp.icon size={24} />
                 </motion.div>
 
-                {/* Desktop Right Side (Date) */}
                 <motion.div 
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}

@@ -17,7 +17,6 @@ function Counter({ end, suffix = "", duration = 2000 }: { end: number, suffix?: 
       const progress = timestamp - startTime;
       const percentage = Math.min(progress / duration, 1);
       
-      // Easing function
       const easeOutQuart = 1 - Math.pow(1 - percentage, 4);
       
       setCount(Math.floor(end * easeOutQuart));
@@ -51,8 +50,43 @@ export function About() {
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="relative h-96 lg:h-[450px] w-full flex items-center justify-center">
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.9, rotate: 0 }}
+              whileInView={{ opacity: 0.7, scale: 1, rotate: 6 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="absolute top-8 left-8 lg:left-12 w-full h-full max-w-xs rounded-2xl overflow-hidden border border-border"
+            >
+              <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&q=80&fit=crop" className="object-cover w-full h-full" alt="Coding setup" />
+            </motion.div>
+            
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.9, rotate: 0 }}
+              whileInView={{ opacity: 0.85, scale: 1, rotate: 3 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="absolute top-4 left-4 lg:left-6 w-full h-full max-w-xs rounded-2xl overflow-hidden border border-primary/20 glow-purple"
+            >
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&q=80&fit=crop" className="object-cover w-full h-full" alt="Tech setup" />
+            </motion.div>
+            
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="absolute top-0 left-0 w-full h-full max-w-xs rounded-2xl overflow-hidden border-2 border-primary/40 glow-purple"
+            >
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80&fit=crop&crop=face" className="object-cover w-full h-full" alt="Bisma Asif" />
+              <div className="absolute bottom-4 left-4 glass px-3 py-1.5 rounded-full text-xs font-medium text-primary shadow-lg border border-primary/20">
+                AI Startup Founder
+              </div>
+            </motion.div>
+          </div>
+
           <motion.div 
-            initial={{ opacity: 0, x: -30 }}
+            initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             className="space-y-6 text-lg text-muted-foreground"
@@ -66,55 +100,23 @@ export function About() {
             <p>
               Beyond building products, I'm deeply committed to giving back to the community. As a Tech Trainer, I've mentored over 100 students, helping them break into the industry as Frontend and WordPress developers.
             </p>
-          </motion.div>
 
-          <div className="relative">
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true, margin: "-100px" }}
-              className="grid grid-cols-2 gap-4"
-            >
+            <div className="grid grid-cols-2 gap-4 mt-8">
               {[
                 { label: "Years Experience", value: 3, suffix: "+" },
                 { label: "Projects", value: 20, suffix: "+" },
                 { label: "Students Mentored", value: 100, suffix: "+" },
                 { label: "AI Startup", value: 1, suffix: "" }
               ].map((stat, i) => (
-                <div key={i} className="glass p-6 rounded-2xl flex flex-col items-center justify-center text-center border-border hover:border-primary/50 transition-colors">
-                  <div className="text-4xl font-bold font-serif gradient-text mb-2">
+                <div key={i} className="glass p-4 rounded-2xl flex flex-col items-center justify-center text-center border-border hover:border-primary/50 transition-colors">
+                  <div className="text-3xl font-bold font-serif gradient-text mb-1">
                     <Counter end={stat.value} suffix={stat.suffix} />
                   </div>
-                  <div className="text-sm font-medium text-foreground">{stat.label}</div>
+                  <div className="text-xs font-medium text-foreground">{stat.label}</div>
                 </div>
               ))}
-            </motion.div>
-
-            {/* Floating cards */}
-            <motion.div 
-              initial={{ opacity: 0, y: 30, rotate: -5 }}
-              whileInView={{ opacity: 1, y: 0, rotate: -5 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.3 }}
-              className="hidden md:block absolute -left-12 -top-12 glass p-4 rounded-xl border border-primary/30 glow-purple z-10 w-48 shadow-2xl"
-              style={{ animation: "float 6s ease-in-out infinite" }}
-            >
-              <h3 className="font-bold text-primary mb-1">RishtaAI</h3>
-              <p className="text-xs text-muted-foreground">Founder & Lead Engineer</p>
-            </motion.div>
-
-            <motion.div 
-              initial={{ opacity: 0, y: 30, rotate: 5 }}
-              whileInView={{ opacity: 1, y: 0, rotate: 5 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.5 }}
-              className="hidden md:block absolute -right-8 -bottom-8 glass p-4 rounded-xl border border-secondary/30 glow-cyan z-10 w-48 shadow-2xl"
-              style={{ animation: "float 8s ease-in-out infinite" }}
-            >
-              <h3 className="font-bold text-secondary mb-1">Tech Trainer</h3>
-              <p className="text-xs text-muted-foreground">Mentoring the next generation</p>
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

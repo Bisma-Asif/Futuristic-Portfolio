@@ -46,8 +46,13 @@ const achievements = [
 
 export function Achievements() {
   return (
-    <section id="achievements" className="py-24 relative bg-background/50">
-      <div className="container mx-auto px-4">
+    <section id="achievements" className="py-24 relative bg-background/50 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5 blur-[100px]" />
+        <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

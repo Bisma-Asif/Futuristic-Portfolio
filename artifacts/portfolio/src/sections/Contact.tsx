@@ -11,12 +11,10 @@ export function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate API call
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSuccess(true);
       
-      // Reset after 5s
       setTimeout(() => setIsSuccess(false), 5000);
       (e.target as HTMLFormElement).reset();
     }, 1500);
@@ -38,7 +36,6 @@ export function Contact() {
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          {/* Left: Form */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -110,13 +107,24 @@ export function Contact() {
             </div>
           </motion.div>
 
-          {/* Right: Contact Options */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             className="flex flex-col justify-center space-y-6"
           >
+            <div className="mb-8 flex flex-col items-center">
+              <div className="relative w-36 h-36 mx-auto mb-4">
+                <div className="absolute inset-0 rounded-full border border-primary/20" />
+                <div className="absolute inset-0 rounded-full border border-primary/10" style={{ transform: 'rotateX(75deg)', animation: 'spin-slow 8s linear infinite' }} />
+                <div className="absolute inset-4 rounded-full border border-secondary/15" style={{ transform: 'rotateY(60deg)', animation: 'spin-slow 6s linear infinite reverse' }} />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-primary glow-purple" />
+                <div className="absolute w-2 h-2 bg-secondary rounded-full" style={{ top: '50%', left: '50%', marginTop: -4, marginLeft: -4, animation: 'orbit 3s linear infinite', transformOrigin: 'center' }} />
+              </div>
+              <p className="text-center text-sm text-primary font-medium">Based in Pakistan</p>
+              <p className="text-center text-xs text-muted-foreground">Available Worldwide</p>
+            </div>
+
             <h3 className="text-2xl font-bold mb-4">Other ways to connect</h3>
             
             <a href="mailto:bismaasif.dev@gmail.com" className="flex items-center space-x-4 p-6 glass rounded-2xl hover:bg-white/5 transition-colors group" data-testid="link-contact-email">
@@ -158,10 +166,6 @@ export function Contact() {
                 <div className="font-medium text-foreground">Connect on LinkedIn</div>
               </div>
             </a>
-
-            <div className="mt-8 pt-8 border-t border-border text-center lg:text-left">
-              <p className="text-muted-foreground tracking-wide font-medium">Based in Pakistan | Available Worldwide</p>
-            </div>
           </motion.div>
         </div>
       </div>

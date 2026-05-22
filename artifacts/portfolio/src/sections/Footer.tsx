@@ -8,7 +8,10 @@ export function Footer() {
 
   return (
     <footer className="py-12 border-t border-border/50 relative overflow-hidden bg-background">
-      {/* Decorative gradient */}
+      <div className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none select-none">
+        <span className="text-[12rem] font-bold font-serif opacity-[0.02] whitespace-nowrap gradient-text tracking-widest">BISMA</span>
+      </div>
+
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-24 bg-primary/10 blur-[80px] pointer-events-none" />
 
       <div className="container mx-auto px-4 relative z-10">
