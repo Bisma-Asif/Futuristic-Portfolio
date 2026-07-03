@@ -75,7 +75,7 @@ export function Hero() {
               variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
               className="mb-8"
             >
-              <span className="inline-flex items-center space-x-2 glass px-4 py-2 rounded-full border border-primary/30 shadow-[0_0_15px_rgba(147,51,234,0.2)]">
+              <span className="inline-flex items-center space-x-2 glass px-4 py-2 rounded-full border border-primary/30 shadow-[0_0_15px_rgba(245,158,11,0.2)]">
                 <span className="w-2 h-2 rounded-full bg-green-500 animate-[pulse-glow_2s_infinite]" />
                 <span className="text-sm font-medium tracking-wide text-muted-foreground">Available for Freelance Projects</span>
               </span>
@@ -136,8 +136,8 @@ export function Hero() {
               {[
                 { icon: Linkedin, href: "#", testid: "link-linkedin", color: "hover:text-blue-400 hover:shadow-[0_0_15px_rgba(96,165,250,0.5)]" },
                 { icon: SiGithub, href: "#", testid: "link-github", color: "hover:text-white hover:shadow-[0_0_15px_rgba(255,255,255,0.5)]" },
-                { icon: SiInstagram, href: "#", testid: "link-instagram", color: "hover:text-pink-500 hover:shadow-[0_0_15px_rgba(236,72,153,0.5)]" },
-                { icon: Mail, href: "#contact", onClick: (e: React.MouseEvent<HTMLAnchorElement>) => { e.preventDefault(); scrollTo('#contact'); }, testid: "link-email", color: "hover:text-primary hover:shadow-[0_0_15px_rgba(147,51,234,0.5)]" }
+                { icon: SiInstagram, href: "#", testid: "link-instagram", color: "hover:text-amber-400 hover:shadow-[0_0_15px_rgba(245,158,11,0.5)]" },
+                { icon: Mail, href: "#contact", onClick: (e: React.MouseEvent<HTMLAnchorElement>) => { e.preventDefault(); scrollTo('#contact'); }, testid: "link-email", color: "hover:text-primary hover:shadow-[0_0_15px_rgba(245,158,11,0.5)]" }
               ].map((social, i) => (
                 <a
                   key={i}

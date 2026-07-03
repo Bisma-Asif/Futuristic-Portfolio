@@ -97,7 +97,7 @@ export function Contact() {
                   <button 
                     type="submit" 
                     disabled={isSubmitting}
-                    className="w-full py-4 rounded-lg bg-gradient-to-r from-primary to-accent text-white font-bold text-lg hover:shadow-[0_0_30px_rgba(147,51,234,0.4)] transition-shadow disabled:opacity-70 disabled:cursor-not-allowed"
+                    className="w-full py-4 rounded-lg bg-gradient-to-r from-primary to-accent text-white font-bold text-lg hover:shadow-[0_0_30px_rgba(245,158,11,0.4)] transition-shadow disabled:opacity-70 disabled:cursor-not-allowed"
                     data-testid="button-submit-contact"
                   >
                     {isSubmitting ? "Sending..." : "Send Message"}
@@ -148,7 +148,7 @@ export function Contact() {
             </a>
 
             <a href="#" className="flex items-center space-x-4 p-6 glass rounded-2xl hover:bg-white/5 transition-colors group" data-testid="link-contact-calendly">
-              <div className="w-12 h-12 rounded-full bg-cyan-500/10 flex items-center justify-center text-cyan-500 group-hover:scale-110 transition-transform glow-cyan">
+              <div className="w-12 h-12 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-500 group-hover:scale-110 transition-transform glow-cyan">
                 <Calendar size={24} />
               </div>
               <div>
@@ -158,7 +158,7 @@ export function Contact() {
             </a>
 
             <a href="#" className="flex items-center space-x-4 p-6 glass rounded-2xl hover:bg-white/5 transition-colors group" data-testid="link-contact-linkedin">
-              <div className="w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-500 group-hover:scale-110 transition-transform glow-purple">
+              <div className="w-12 h-12 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-500 group-hover:scale-110 transition-transform glow-purple">
                 <Linkedin size={24} />
               </div>
               <div>

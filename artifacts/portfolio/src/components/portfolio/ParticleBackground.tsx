@@ -33,7 +33,7 @@ export function ParticleBackground() {
         this.vx = (Math.random() - 0.5) * 0.5;
         this.vy = (Math.random() - 0.5) * 0.5;
         
-        const colors = ['#9333ea', '#22d3ee', '#ec4899']; // purple, cyan, pink
+        const colors = ['#f59e0b', '#10b981', '#f97316']; // amber, emerald, coral
         this.color = colors[Math.floor(Math.random() * colors.length)];
         this.opacity = Math.random() * 0.3 + 0.2;
       }

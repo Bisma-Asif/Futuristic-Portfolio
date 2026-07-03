@@ -7,42 +7,42 @@ const services = [
     desc: "High-end, cinematic personal sites that make you stand out.",
     icon: Globe,
     color: "text-primary bg-primary/10 border-primary/20",
-    hoverGlow: "hover:shadow-[0_0_30px_rgba(147,51,234,0.3)]"
+    hoverGlow: "hover:shadow-[0_0_30px_rgba(245,158,11,0.3)]"
   },
   {
     title: "React.js Development",
     desc: "Complex, scalable, and highly interactive frontend applications.",
     icon: Code,
     color: "text-secondary bg-secondary/10 border-secondary/20",
-    hoverGlow: "hover:shadow-[0_0_30px_rgba(34,211,238,0.3)]"
+    hoverGlow: "hover:shadow-[0_0_30px_rgba(16,185,129,0.3)]"
   },
   {
     title: "WordPress Development",
     desc: "Custom themes and robust e-commerce solutions for businesses.",
     icon: Layers,
     color: "text-accent bg-accent/10 border-accent/20",
-    hoverGlow: "hover:shadow-[0_0_30px_rgba(236,72,153,0.3)]"
+    hoverGlow: "hover:shadow-[0_0_30px_rgba(249,115,22,0.3)]"
   },
   {
     title: "AI Startup Consultation",
     desc: "Guidance on integrating AI models and building smart MVPs.",
     icon: Cpu,
     color: "text-primary bg-primary/10 border-primary/20",
-    hoverGlow: "hover:shadow-[0_0_30px_rgba(147,51,234,0.3)]"
+    hoverGlow: "hover:shadow-[0_0_30px_rgba(245,158,11,0.3)]"
   },
   {
     title: "UI/UX Design",
     desc: "Beautiful, user-centric designs created in Figma.",
     icon: Palette,
     color: "text-secondary bg-secondary/10 border-secondary/20",
-    hoverGlow: "hover:shadow-[0_0_30px_rgba(34,211,238,0.3)]"
+    hoverGlow: "hover:shadow-[0_0_30px_rgba(16,185,129,0.3)]"
   },
   {
     title: "Tech Training",
     desc: "Comprehensive bootcamps and 1-on-1 mentorship sessions.",
     icon: GraduationCap,
     color: "text-accent bg-accent/10 border-accent/20",
-    hoverGlow: "hover:shadow-[0_0_30px_rgba(236,72,153,0.3)]"
+    hoverGlow: "hover:shadow-[0_0_30px_rgba(249,115,22,0.3)]"
   }
 ];
 
