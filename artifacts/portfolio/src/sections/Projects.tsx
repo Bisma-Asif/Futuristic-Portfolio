@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github, Play } from "lucide-react";
+import rishtaAiImg from "../assets/rishta-ai.png";
 import zaraClinciImg from "@assets/screenshots/anumtaasnain_github_io_zara_clinic.png";
 import pareesImg from "@assets/screenshots/anumtaasnain-perfumes-parees-web_vercel_app.png";
 import askMeImg from "@assets/screenshots/anumtaasnain_github_io_ask_me_mobile.png";
@@ -53,13 +54,13 @@ const projects = [
   {
     title: "RishtaAI",
     description:
-      "AI-powered matchmaking platform for the Pakistani diaspora. Features personality analysis, astrology compatibility, AI predictions, and intelligent matching algorithms.",
-    tags: ["React.js", "AI", "Firebase", "Tailwind CSS"],
-    image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=600&q=80&fit=crop",
-    overlay: "from-purple-900/80 via-purple-800/40 to-transparent",
-    glowClass: "hover:shadow-[0_0_20px_rgba(147,51,234,0.3)]",
-    liveUrl: "#",
-    githubUrl: "#",
+      "AI-powered matchmaking platform for the Pakistani diaspora. Features personality analysis, compatibility scoring, AI-driven match predictions, and intelligent partner suggestions.",
+    tags: ["React.js", "AI/ML", "Node.js", "Tailwind CSS"],
+    image: rishtaAiImg,
+    overlay: "from-pink-900/80 via-rose-800/40 to-transparent",
+    glowClass: "hover:shadow-[0_0_20px_rgba(244,63,94,0.3)]",
+    liveUrl: "https://rishta-ai-app.vercel.app/",
+    githubUrl: "https://github.com/bismaasif/rishta-ai",
   },
   {
     title: "Portfolio Website",

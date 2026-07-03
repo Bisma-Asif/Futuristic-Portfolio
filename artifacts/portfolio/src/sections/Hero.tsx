@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Mail, ChevronDown, Linkedin } from "lucide-react";
 import { SiGithub, SiInstagram } from "react-icons/si";
 import { ParticleBackground } from "@/components/portfolio/ParticleBackground";
+import bismaPhoto from "../assets/bisma-portrait.jpeg";
 
 const roles = [
   "Software Engineer",
@@ -172,7 +173,7 @@ export function Hero() {
               
               <div className="relative w-[320px] h-[320px] rounded-full p-1 bg-gradient-to-br from-primary via-secondary to-accent" style={{ animation: 'border-glow 3s infinite' }}>
                 <div className="w-full h-full bg-background rounded-full overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80&fit=crop&crop=face" alt="Bisma Asif" className="w-full h-full object-cover" />
+                  <img src={bismaPhoto} alt="Bisma Asif" className="w-full h-full object-cover object-top" />
                 </div>
               </div>
 
