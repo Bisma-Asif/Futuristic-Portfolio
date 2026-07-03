@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import bismaPhoto from "../assets/bisma-portrait.jpeg";
 
 function Counter({ end, suffix = "", duration = 2000 }: { end: number, suffix?: string, duration?: number }) {
   const [count, setCount] = useState(0);
@@ -78,7 +79,7 @@ export function About() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="absolute top-0 left-0 w-full h-full max-w-xs rounded-2xl overflow-hidden border-2 border-primary/40 glow-purple"
             >
-              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80&fit=crop&crop=face" className="object-cover w-full h-full" alt="Bisma Asif" />
+              <img src={bismaPhoto} className="object-cover w-full h-full object-top" alt="Bisma Asif" />
               <div className="absolute bottom-4 left-4 glass px-3 py-1.5 rounded-full text-xs font-medium text-primary shadow-lg border border-primary/20">
                 AI Startup Founder
               </div>
