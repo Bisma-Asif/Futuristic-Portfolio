@@ -115,12 +115,6 @@ export function Hero() {
                 View Projects
               </button>
               <button 
-                className="px-8 py-3 rounded-full glass border-border hover:bg-white/5 font-medium hover:scale-105 transition-transform"
-                data-testid="button-download-resume"
-              >
-                Download Resume
-              </button>
-              <button 
                 onClick={() => scrollTo('#contact')}
                 className="px-8 py-3 rounded-full border border-secondary text-secondary hover:bg-secondary/10 font-medium glow-cyan hover:scale-105 transition-transform"
                 data-testid="button-contact"
