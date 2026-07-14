@@ -104,10 +104,10 @@ export function About() {
 
             <div className="grid grid-cols-2 gap-4 mt-8">
               {[
-                { label: "Years Experience", value: 3, suffix: "+" },
+                { label: "Years Experience", value: 5, suffix: "+" },
                 { label: "Projects", value: 20, suffix: "+" },
                 { label: "Students Mentored", value: 100, suffix: "+" },
-                { label: "AI Startup", value: 1, suffix: "" }
+                { label: "AI Startups", value: 5, suffix: "" }
               ].map((stat, i) => (
                 <div key={i} className="glass p-4 rounded-2xl flex flex-col items-center justify-center text-center border-border hover:border-primary/50 transition-colors">
                   <div className="text-3xl font-bold font-serif gradient-text mb-1">

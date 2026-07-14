@@ -36,10 +36,10 @@ function Counter({ end, suffix = "", duration = 2000, startWhenInView = false }:
 }
 
 const achievements = [
-  { label: "AI Startup Founded", value: 1, suffix: "", icon: Rocket, glow: "glow-purple" },
+  { label: "AI Startups Founded", value: 5, suffix: "", icon: Rocket, glow: "glow-purple" },
   { label: "Students Mentored", value: 100, suffix: "+", icon: Users, glow: "glow-cyan" },
   { label: "Projects Delivered", value: 20, suffix: "+", icon: Briefcase, glow: "glow-pink" },
-  { label: "Years Experience", value: 3, suffix: "+", icon: Clock, glow: "glow-purple" },
+  { label: "Years Experience", value: 5, suffix: "+", icon: Clock, glow: "glow-purple" },
   { label: "Workshops Conducted", value: 5, suffix: "+", icon: Presentation, glow: "glow-cyan" },
   { label: "Passion for Code", value: "∞", suffix: "", icon: Heart, glow: "glow-pink" },
 ];
