@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Calendar, CheckCircle2, Linkedin } from "lucide-react";
-import { SiWhatsapp } from "react-icons/si";
+import { SiWhatsapp, SiFacebook } from "react-icons/si";
 
 export function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -127,43 +127,43 @@ export function Contact() {
 
             <h3 className="text-2xl font-bold mb-4">Other ways to connect</h3>
             
-            <a href="mailto:bismaasif.dev@gmail.com" className="flex items-center space-x-4 p-6 glass rounded-2xl hover:bg-white/5 transition-colors group" data-testid="link-contact-email">
+            <a href="mailto:bisma.asif2060@gmail.com" className="flex items-center space-x-4 p-6 glass rounded-2xl hover:bg-white/5 transition-colors group" data-testid="link-contact-email">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform glow-purple">
                 <Mail size={24} />
               </div>
               <div>
                 <div className="text-sm text-muted-foreground">Email</div>
-                <div className="font-medium text-foreground">bismaasif.dev@gmail.com</div>
+                <div className="font-medium text-foreground">bisma.asif2060@gmail.com</div>
               </div>
             </a>
 
-            <a href="#" className="flex items-center space-x-4 p-6 glass rounded-2xl hover:bg-white/5 transition-colors group" data-testid="link-contact-whatsapp">
+            <a href="https://wa.me/923171230707" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-4 p-6 glass rounded-2xl hover:bg-white/5 transition-colors group" data-testid="link-contact-whatsapp">
               <div className="w-12 h-12 rounded-full bg-green-500/10 flex items-center justify-center text-green-500 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(34,197,94,0.3)]">
                 <SiWhatsapp size={24} />
               </div>
               <div>
                 <div className="text-sm text-muted-foreground">WhatsApp</div>
-                <div className="font-medium text-foreground">Chat on WhatsApp</div>
+                <div className="font-medium text-foreground">+92 317 1230707</div>
               </div>
             </a>
 
-            <a href="#" className="flex items-center space-x-4 p-6 glass rounded-2xl hover:bg-white/5 transition-colors group" data-testid="link-contact-calendly">
-              <div className="w-12 h-12 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-500 group-hover:scale-110 transition-transform glow-cyan">
-                <Calendar size={24} />
-              </div>
-              <div>
-                <div className="text-sm text-muted-foreground">Calendly</div>
-                <div className="font-medium text-foreground">Book a Call</div>
-              </div>
-            </a>
-
-            <a href="#" className="flex items-center space-x-4 p-6 glass rounded-2xl hover:bg-white/5 transition-colors group" data-testid="link-contact-linkedin">
-              <div className="w-12 h-12 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-500 group-hover:scale-110 transition-transform glow-purple">
+            <a href="https://www.linkedin.com/in/bisma-asif26/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-4 p-6 glass rounded-2xl hover:bg-white/5 transition-colors group" data-testid="link-contact-linkedin">
+              <div className="w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(96,165,250,0.3)]">
                 <Linkedin size={24} />
               </div>
               <div>
                 <div className="text-sm text-muted-foreground">LinkedIn</div>
-                <div className="font-medium text-foreground">Connect on LinkedIn</div>
+                <div className="font-medium text-foreground">linkedin.com/in/bisma-asif26</div>
+              </div>
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=61591333746940" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-4 p-6 glass rounded-2xl hover:bg-white/5 transition-colors group" data-testid="link-contact-facebook">
+              <div className="w-12 h-12 rounded-full bg-blue-600/10 flex items-center justify-center text-blue-500 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(59,130,246,0.3)]">
+                <SiFacebook size={24} />
+              </div>
+              <div>
+                <div className="text-sm text-muted-foreground">Facebook</div>
+                <div className="font-medium text-foreground">Bisma Asif</div>
               </div>
             </a>
           </motion.div>

@@ -1,5 +1,5 @@
 import { Mail, ArrowUp, Linkedin } from "lucide-react";
-import { SiGithub, SiInstagram } from "react-icons/si";
+import { SiGithub, SiInstagram, SiFacebook } from "react-icons/si";
 
 export function Footer() {
   const scrollToTop = () => {
@@ -26,9 +26,10 @@ export function Footer() {
 
           <div className="flex items-center space-x-6 mb-12">
             {[
-              { icon: Linkedin, href: "#", testid: "footer-linkedin" },
-              { icon: SiGithub, href: "#", testid: "footer-github" },
-              { icon: SiInstagram, href: "#", testid: "footer-instagram" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/bisma-asif26/", testid: "footer-linkedin" },
+              { icon: SiGithub, href: "https://github.com/Bisma-Asif", testid: "footer-github" },
+              { icon: SiInstagram, href: "https://www.instagram.com/bisma.asif/", testid: "footer-instagram" },
+              { icon: SiFacebook, href: "https://www.facebook.com/profile.php?id=61591333746940", testid: "footer-facebook" },
               { icon: Mail, href: "#contact", testid: "footer-email" }
             ].map((social, i) => (
               <a

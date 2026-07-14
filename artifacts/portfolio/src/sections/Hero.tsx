@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Mail, ChevronDown, Linkedin } from "lucide-react";
-import { SiGithub, SiInstagram } from "react-icons/si";
+import { SiGithub, SiInstagram, SiFacebook } from "react-icons/si";
 import { ParticleBackground } from "@/components/portfolio/ParticleBackground";
 import bismaPhoto from "../assets/bisma-portrait.jpeg";
 
@@ -134,9 +134,10 @@ export function Hero() {
               className="flex space-x-6 justify-center lg:justify-start"
             >
               {[
-                { icon: Linkedin, href: "#", testid: "link-linkedin", color: "hover:text-blue-400 hover:shadow-[0_0_15px_rgba(96,165,250,0.5)]" },
-                { icon: SiGithub, href: "#", testid: "link-github", color: "hover:text-white hover:shadow-[0_0_15px_rgba(255,255,255,0.5)]" },
-                { icon: SiInstagram, href: "#", testid: "link-instagram", color: "hover:text-amber-400 hover:shadow-[0_0_15px_rgba(245,158,11,0.5)]" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/bisma-asif26/", testid: "link-linkedin", color: "hover:text-blue-400 hover:shadow-[0_0_15px_rgba(96,165,250,0.5)]" },
+                { icon: SiGithub, href: "https://github.com/Bisma-Asif", testid: "link-github", color: "hover:text-white hover:shadow-[0_0_15px_rgba(255,255,255,0.5)]" },
+                { icon: SiInstagram, href: "https://www.instagram.com/bisma.asif/", testid: "link-instagram", color: "hover:text-pink-400 hover:shadow-[0_0_15px_rgba(236,72,153,0.5)]" },
+                { icon: SiFacebook, href: "https://www.facebook.com/profile.php?id=61591333746940", testid: "link-facebook", color: "hover:text-blue-500 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)]" },
                 { icon: Mail, href: "#contact", onClick: (e: React.MouseEvent<HTMLAnchorElement>) => { e.preventDefault(); scrollTo('#contact'); }, testid: "link-email", color: "hover:text-primary hover:shadow-[0_0_15px_rgba(245,158,11,0.5)]" }
               ].map((social, i) => (
                 <a
